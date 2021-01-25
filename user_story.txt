@@ -1,0 +1,17 @@
+objects | messages
+
+person | 
+bike | working?
+docking station | release_bike
+
+Bike <-- working? --> true/false
+DockingStation <-- release_bike --> a Bike
+
+
+                    look at another bike
+                   /                no
+                  /                  |
+docking station empty? --> no --> bike working --> yes --> person takes bike
+        |
+       yes
+No bike to take
