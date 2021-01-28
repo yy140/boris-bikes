@@ -1,12 +1,12 @@
 require 'bike'
 
 describe Bike do
-  it "responds to working?" do
-    bike = Bike.new
-    expect(bike).to respond_to :working? 
-  end
+	describe 'working?' do
+    it 'checks if the bike is working' do
+    	expect(subject).to respond_to :working?
+    end
+  end 
 end
-
 =begin
 describe MyObject do
   alias_method :myobject, :subject
