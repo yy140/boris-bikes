@@ -15,7 +15,7 @@ describe 'realease_bike' do
 	end
 describe 'dock' do
 	it 'gives error message when dock is full' do
-		DockingStation::DEFAULT_CAPACITY.times { subject.dock(Bike.new)}
+		subject.DEFAULT_CAPACITY.times { subject.dock(Bike.new)}
 		expect{ raise subject.dock(Bike.new)}.to raise_error("This dock is full")
 	end
 	it 'docks the bike' do 
